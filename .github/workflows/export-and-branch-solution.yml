@@ -20,15 +20,14 @@ jobs:
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
         environment-url: 'https://orgdb24a84f.crm4.dynamics.com'
-        user-name: 'sa@rogerthatdev.onmicrosoft.com'
+        user-name: 'admin@D365DemoTS047561.onmicrosoft.com'
         password-secret: ${{ secrets.password }}
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
         environment-url: 'https://orgdb24a84f.crm4.dynamics.com'
-        user-name: 'sa@rogerthatdev.onmicrosoft.com'
-        password-secret: ${{ secrets.password }}
+        user-name: 'admin@D365DemoTS047561.onmicrosoft.com'
         solution-name: TestRunALM
         solution-output-file: out/exported/TestRunALM.zip
 
